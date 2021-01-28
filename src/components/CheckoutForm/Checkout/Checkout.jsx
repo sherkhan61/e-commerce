@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {
     Paper, Stepper, Step, StepLabel, Typography,
     CircularProgress, Divider, Button
@@ -10,8 +10,19 @@ import PaymentForm from "../PaymentForm";
 const steps = ['Shipping address', 'Payment details']
 
 const Checkout = () => {
-    const [activeStep, setActiveStep] = useState(2)
+    const [activeStep, setActiveStep] = useState(0)
     const classes = useStyles()
+
+    useEffect(() => {
+        const generateToken = async () => {
+            try {
+
+            } catch (error) {
+
+            }
+        }
+    }, [])
+
 
     const Confirmation = () => (
         <div>

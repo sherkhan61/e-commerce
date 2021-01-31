@@ -3,6 +3,7 @@ import { commerce } from "./lib/commerce";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { Products, Navbar, Cart, Checkout } from './components'
+import Footer from "./components/Footer/Footer";
 
 
 const App = () => {
@@ -90,6 +91,7 @@ const App = () => {
                         />
                   </Route>
               </Switch>
+              <Footer />
           </div>
       </Router>
 
